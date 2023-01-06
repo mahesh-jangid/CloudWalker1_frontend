@@ -29,12 +29,16 @@ const User = ({ user }) => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
   console.log(user);
-
+  // useEffect(() => {
+  //   if (successDelete) {
+  //     history.push("/Home");
+  //   }
+  // }, [successDelete, dispatch, history]);
   const deletehandler = (id) => {
     if (window.confirm("Are You Sure to delete?")) {
       dispatch(DeleteUser(id));
     }
-    window.location.href = "/Home";
+    window.location.href = "/";
   };
   return (
     <>

@@ -13,7 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { Container, SimpleGrid, Spinner } from "@chakra-ui/react";
 
-import EndMsg from "../components/EndMsg";
 import User from "../components/User";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
