@@ -54,10 +54,7 @@ export const Nav = () => {
           <Link to={"/Home"}>
             <Text color={"white"}>Dashboard</Text>
           </Link>
-          <Spacer />
-          <Link to={"/"}>
-            <Text color={"white"}>About US</Text>
-          </Link>
+
           <Spacer />
           <Flex gap="6" fontSize={"18px"}>
             {userInfo ? (
