@@ -37,7 +37,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `https://cloudwalker-backend.onrender.com/api/users/login`,
+      `https://cloudewalker1-backend.onrender.com/api/users/login`,
       { email, password },
       config
     );
@@ -77,7 +77,7 @@ export const register = (name, email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      `https://cloudwalker-backend.onrender.com/api/users/register`,
+      `https://cloudewalker1-backend.onrender.com/api/users/register`,
       { name, email, password },
       config
     );
@@ -120,7 +120,7 @@ export const DeleteUser = (id) => async (dispatch, getState) => {
     };
 
     await axios.delete(
-      `http://localhost:5300/api/users/${id}`,
+      `https://cloudewalker1-backend.onrender.com/api/users/${id}`,
       config
     );
     dispatch({
@@ -153,7 +153,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.put(
-      `http://localhost:5300/api/users/${user._id}`,
+      `https://cloudewalker1-backend.onrender.com/api/users/${user._id}`,
       user,
       config
     );
@@ -188,7 +188,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:5300/api/users/${id}`,
+      `https://cloudewalker1-backend.onrender.com/api/users/${id}`,
       config
     );
     console.log(data);
@@ -223,7 +223,7 @@ export const ListUsers = () => async (dispatch, getState) => {
     };
 
     const { data } = await axios.get(
-      `http://localhost:5300/api/users/getdata`,
+      `https://cloudewalker1-backend.onrender.com/api/users/getdata`,
       config
     );
     dispatch({
@@ -257,7 +257,7 @@ export const AdduserData = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.post(
-      `http://localhost:5300/api/users/adddata`,
+      `https://cloudewalker1-backend.onrender.com/api/users/adddata`,
       user,
       config
     );
