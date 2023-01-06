@@ -27,7 +27,6 @@ const App = () => {
     <div className="App">
       <header>
         <Router>
-          {/* <ScrollIntoView> */}
           {loading ? (
             <div className="loading">
               <Spinner color="pink.500" />
@@ -46,7 +45,6 @@ const App = () => {
               </Switch>
             </>
           )}
-          {/* </ScrollIntoView> */}
         </Router>
       </header>
     </div>
